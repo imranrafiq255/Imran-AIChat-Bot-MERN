@@ -1,0 +1,113 @@
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: rgb(241, 235, 235);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-text {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: bolder;
+}
+
+.name-text {
+    color: rgb(236, 23, 201);
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 0.05cm;
+}
+
+.text-input {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.text-input input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    height: 60px;
+    font-size: 26px;
+    color: #444242;
+    padding-right: 60px;
+}
+
+.text-input input::placeholder {
+    font-size: 20px;
+}
+
+.send-logo {
+    position: absolute;
+    right: 30px;
+    bottom: 32%;
+}
+.send-logo:hover 
+{
+    cursor: pointer;
+}
+.chat-text {
+    margin-top: 1px;
+    margin-bottom: 80px;
+    padding: 20px;
+    overflow-y: auto;
+}
+.question 
+{
+    padding: 0 20px;
+    margin-top: 30px;
+}
+.loader 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+@media (max-width: 400px) {
+    .top-text {
+        font-size: 30px;
+    }
+
+    .name-text {
+        font-weight: 900;
+        font-size: 35px;
+    }
+
+    .text-input {
+        padding: 8px;
+    }
+
+    .text-input input {
+        width: calc(100% - 16px);
+        padding: 6px;
+        padding-right: 50px;
+    }
+}
