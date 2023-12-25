@@ -10,7 +10,7 @@ const Home = () => {
   const [text, setText] = useState("");
   const [generatedAnswer, setAnswer] = useState("");
   const [loader, setLoader] = useState(false);
-  const API_KEY = "AIzaSyCa8n-6r4g1agqReawsIACJrfq-beuUdC0";
+  const API_KEY = process.env.key;
   const apiUrl =
     "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=" +
     API_KEY;
